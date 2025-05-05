@@ -1,0 +1,18 @@
+{
+  "name": "imba-starter-kit",
+  "module": "./src/index.imba",
+  "type": "module",
+  "devDependencies": {
+    "bimba-cli": "latest",
+    "imba": "latest"
+  },
+  "scripts": {
+    "dev": "bunx bimba src/index.imba --outdir public --watch --clearcache",
+    "bundle": "bunx bimba src/index.imba --outdir public --minify"
+  },
+  "dependencies": {
+    "imba-color-modes": "latest",
+    "imba-localization": "latest",
+    "imba-phosphor-icons": "latest"
+  }
+}

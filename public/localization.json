@@ -1,0 +1,13 @@
+{
+    "en": {
+        "header": {
+            "title": "Localization",
+            "subtitle": "Simple, yet powerful localization"
+        },
+        "bonuses": {
+            "bonus1": "Automatic browser language detection",
+            "bonus2": "Localization file (JSON) loaded asynchronously",
+            "bonus3": "Single translation file with nested keys"
+        }
+    }
+}
