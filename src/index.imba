@@ -27,7 +27,7 @@ theme(211)
 #  Localization infrastructure
 # -------------------------------------
 import { LocalizationState, LocalizationSelector } from 'imba-localization'
-const loc = new LocalizationState('http://127.0.0.1:5501/localization.json')
+const loc = new LocalizationState('localization.json')
 
 loc.onready = do
 	imba.mount <App>
