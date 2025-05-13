@@ -1,13 +1,578 @@
 {
     "en": {
-        "header": {
-            "title": "Localization",
-            "subtitle": "Simple, yet powerful localization"
+        "$": {
+            "name": "English",
+            "flag": "us"
         },
-        "bonuses": {
+        "main": {
+            "repository": "Repository",
+            "more": "Learn More",
+            "package": "Package",
+            "header": "Start a new Imba project with a ready-to-use foundation",
+            "subheader": "A universal set of libraries needed for most projects. Focus on what makes your app unique — don’t waste time building the basics.",
+            "playground": "See it in action",
+            "builtwith": "Built with"
+        },
+        "colormodes": {
+            "title": "Color Modes",
+            "subtitle": "Seemless dark/light mode switching",
+            "bonus1": "Automantic system color mode detection",
+            "bonus2": "Keeping user preferencies in local storage",
+            "bonus3": "Simple theme creation with dual color palettes",
+            "bonus4": "Plug and play mode switching components"
+        },
+        "localization": {
+            "title": "Localization",
+            "subtitle": "Simple, yet powerful localization",
             "bonus1": "Automatic browser language detection",
-            "bonus2": "Localization file (JSON) loaded asynchronously",
-            "bonus3": "Single translation file with nested keys"
+            "bonus2": "Storing user preferencies in local storage",
+            "bonus3": "Single translation file with nested keys",
+            "bonus4": "Plug and play component to switch languages"
+        },
+        "notifications": {
+            "title": "Notifications",
+            "subtitle": "Beautiful, customizable notifications",
+            "bonus1": "Easy plug and play notification system",
+            "bonus2": "Single component very flexible and customizable",
+            "bonus3": "Notification types: success, info, caution, error",
+            "bonus4": "Supports localization and light/dark modes",
+            "success": {
+                "button": "Success",
+                "header":"Everything awesome",
+                "text":"The required action was completed with a success"
+            },
+            "info": {
+                "button": "Info",
+                "header":"System completed the task",
+                "text":"The background process was done in 15 seconds"
+            },
+            "caution": {
+                "button": "Caution",
+                "header":"You are inactive for 10 min",
+                "text":"For security resons do not forget to logout"
+            },
+            "error": {
+                "button": "Error",
+                "header":"Login fail",
+                "text":"Check your login and password and try again. If you are sure that you are entering the right credentials, create a support ticket and we will help you."
+            },
+            "progress": "Click the notification to avoid timeout and see details"
+            
+        },
+        "popups": {
+            "title": "Popups",
+            "subtitle": "Easy and flexible popup system",
+            "bonus1": "Opinionated approach convinient for Imba apps",
+            "bonus2": "Highly customizable popup windows via CSS",
+            "bonus3": "Flexible buttons and their callbacks",
+            "bonus4": "Popups are mounted separately not messing the code",
+            "confirmation": {
+                "button": "Confirmation",
+                "header": "Save changes",
+                "text": "Please confirm if you wish to continue the operation. Are you sure you want to proceed?",
+                "cancel": "Cancel",
+                "confirm": "Ok"
+            },
+            "custom": {
+                "button": "Custom Form",
+                "header": "Edit credentials",
+                "text": "Fill in your username and new password that meet security policy:",
+                "cancel": "Cancel",
+                "save": "Save"
+            }
+        }
+        
+    },
+    "es": {
+        "$": {
+            "name": "Español",
+            "flag": "es"
+        },
+        "main": {
+            "repository": "Repositorio",
+            "more": "Más información",
+            "package": "Paquete",
+            "header": "Comienza un nuevo proyecto Imba con una base lista para usar",
+            "subheader": "Un conjunto universal de bibliotecas necesarias para la mayoría de los proyectos. Concéntrate en lo que hace único a tu aplicación — no pierdas tiempo construyendo lo básico.",
+            "playground": "Ver en acción",
+            "builtwith": "Construido con"
+        },
+        "colormodes": {
+            "title": "Modos de color",
+            "subtitle": "Cambio sin problemas entre modo oscuro/claro",
+            "bonus1": "Detección automática del modo de color del sistema",
+            "bonus2": "Almacenamiento de preferencias del usuario en almacenamiento local",
+            "bonus3": "Creación simple de temas con paletas de colores duales",
+            "bonus4": "Componentes plug and play para cambiar de modo"
+        },
+        "localization": {
+            "title": "Localización",
+            "subtitle": "Localización simple pero potente",
+            "bonus1": "Detección automática del idioma del navegador",
+            "bonus2": "Almacenamiento de preferencias del usuario en almacenamiento local",
+            "bonus3": "Archivo de traducción único con claves anidadas",
+            "bonus4": "Componente plug and play para cambiar idiomas"
+        },
+        "notifications": {
+            "title": "Notificaciones",
+            "subtitle": "Notificaciones hermosas y personalizables",
+            "bonus1": "Sistema de notificaciones fácil de implementar",
+            "bonus2": "Componente único muy flexible y personalizable",
+            "bonus3": "Tipos de notificaciones: éxito, información, precaución, error",
+            "bonus4": "Compatible con localización y modos claro/oscuro",
+            "success": {
+                "button": "Éxito",
+                "header": "Todo excelente",
+                "text": "La acción requerida se completó con éxito"
+            },
+            "info": {
+                "button": "Información",
+                "header": "El sistema completó la tarea",
+                "text": "El proceso en segundo plano se realizó en 15 segundos"
+            },
+            "caution": {
+                "button": "Precaución",
+                "header": "Has estado inactivo durante 10 min",
+                "text": "Por razones de seguridad no olvides cerrar sesión"
+            },
+            "error": {
+                "button": "Error",
+                "header": "Error de inicio de sesión",
+                "text": "Verifica tu usuario y contraseña e intenta de nuevo. Si estás seguro de que estás ingresando las credenciales correctas, crea un ticket de soporte y te ayudaremos."
+            },
+            "progress": "Haz clic en la notificación para evitar el tiempo de espera y ver detalles"
+        },
+        "popups": {
+            "title": "Ventanas emergentes",
+            "subtitle": "Sistema de ventanas emergentes fácil y flexible",
+            "bonus1": "Enfoque estructurado conveniente para aplicaciones Imba",
+            "bonus2": "Ventanas emergentes altamente personalizables mediante CSS",
+            "bonus3": "Botones flexibles y sus funciones de retorno",
+            "bonus4": "Las ventanas emergentes se montan por separado sin estorbar el código",
+            "confirmation": {
+                "button": "Confirmación",
+                "header": "Guardar cambios",
+                "text": "Por favor confirma si deseas continuar con la operación. ¿Estás seguro de que quieres proceder?",
+                "cancel": "Cancelar",
+                "confirm": "Aceptar"
+            },
+            "custom": {
+                "button": "Formulario personalizado",
+                "header": "Editar credenciales",
+                "text": "Completa tu nombre de usuario y nueva contraseña que cumplan con la política de seguridad:",
+                "cancel": "Cancelar",
+                "save": "Guardar"
+            }
+        }
+    },
+    "de": {
+        "$": {
+            "name": "Deutsch",
+            "flag": "de"
+        },
+        "main": {
+            "repository": "Repository",
+            "more": "Mehr erfahren",
+            "package": "Paket",
+            "header": "Starte ein neues Imba-Projekt mit einer einsatzbereiten Grundlage",
+            "subheader": "Ein universeller Satz von Bibliotheken, die für die meisten Projekte benötigt werden. Konzentriere dich auf das, was deine App einzigartig macht — verschwende keine Zeit mit dem Aufbau der Grundlagen.",
+            "playground": "In Aktion sehen",
+            "builtwith": "Erstellt mit"
+        },
+        "colormodes": {
+            "title": "Farbmodi",
+            "subtitle": "Nahtloser Wechsel zwischen Hell-/Dunkelmodus",
+            "bonus1": "Automatische Erkennung des Systemfarbmodus",
+            "bonus2": "Speicherung der Benutzereinstellungen im lokalen Speicher",
+            "bonus3": "Einfache Themenerstellung mit dualen Farbpaletten",
+            "bonus4": "Plug-and-Play-Komponenten zum Moduswechsel"
+        },
+        "localization": {
+            "title": "Lokalisierung",
+            "subtitle": "Einfache, aber leistungsstarke Lokalisierung",
+            "bonus1": "Automatische Erkennung der Browsersprache",
+            "bonus2": "Speicherung der Benutzereinstellungen im lokalen Speicher",
+            "bonus3": "Einzelne Übersetzungsdatei mit verschachtelten Schlüsseln",
+            "bonus4": "Plug-and-Play-Komponente zum Sprachenwechsel"
+        },
+        "notifications": {
+            "title": "Benachrichtigungen",
+            "subtitle": "Schöne, anpassbare Benachrichtigungen",
+            "bonus1": "Einfaches Plug-and-Play-Benachrichtigungssystem",
+            "bonus2": "Einzelne, sehr flexible und anpassbare Komponente",
+            "bonus3": "Benachrichtigungstypen: Erfolg, Info, Vorsicht, Fehler",
+            "bonus4": "Unterstützt Lokalisierung und Hell-/Dunkelmodi",
+            "success": {
+                "button": "Erfolg",
+                "header": "Alles großartig",
+                "text": "Die erforderliche Aktion wurde erfolgreich abgeschlossen"
+            },
+            "info": {
+                "button": "Info",
+                "header": "System hat die Aufgabe abgeschlossen",
+                "text": "Der Hintergrundprozess wurde in 15 Sekunden erledigt"
+            },
+            "caution": {
+                "button": "Vorsicht",
+                "header": "Du bist seit 10 Min inaktiv",
+                "text": "Aus Sicherheitsgründen nicht vergessen, dich abzumelden"
+            },
+            "error": {
+                "button": "Fehler",
+                "header": "Anmeldefehler",
+                "text": "Überprüfe deinen Benutzernamen und dein Passwort und versuche es erneut. Wenn du sicher bist, dass du die richtigen Anmeldedaten eingibst, erstelle ein Support-Ticket und wir werden dir helfen."
+            },
+            "progress": "Klicke auf die Benachrichtigung, um Zeitüberschreitung zu vermeiden und Details anzuzeigen"
+        },
+        "popups": {
+            "title": "Pop-ups",
+            "subtitle": "Einfaches und flexibles Pop-up-System",
+            "bonus1": "Meinungsstarker Ansatz, praktisch für Imba-Apps",
+            "bonus2": "Hochgradig anpassbare Pop-up-Fenster über CSS",
+            "bonus3": "Flexible Schaltflächen und ihre Callbacks",
+            "bonus4": "Pop-ups werden separat montiert, ohne den Code zu beeinträchtigen",
+            "confirmation": {
+                "button": "Bestätigung",
+                "header": "Änderungen speichern",
+                "text": "Bitte bestätige, ob du mit dem Vorgang fortfahren möchtest. Bist du sicher, dass du fortfahren willst?",
+                "cancel": "Abbrechen",
+                "confirm": "OK"
+            },
+            "custom": {
+                "button": "Benutzerdefiniertes Formular",
+                "header": "Anmeldedaten bearbeiten",
+                "text": "Gib deinen Benutzernamen und dein neues Passwort ein, die der Sicherheitsrichtlinie entsprechen:",
+                "cancel": "Abbrechen",
+                "save": "Speichern"
+            }
+        }
+    },
+    "fr": {
+        "$": {
+            "name": "Français",
+            "flag": "fr"
+        },
+        "main": {
+            "repository": "Dépôt",
+            "more": "En savoir plus",
+            "package": "Package",
+            "header": "Commencez un nouveau projet Imba avec une base prête à l'emploi",
+            "subheader": "Un ensemble universel de bibliothèques nécessaires pour la plupart des projets. Concentrez-vous sur ce qui rend votre application unique — ne perdez pas de temps à construire les bases.",
+            "playground": "Voir en action",
+            "builtwith": "Construit avec"
+        },
+        "colormodes": {
+            "title": "Modes de couleur",
+            "subtitle": "Changement transparent entre mode clair/sombre",
+            "bonus1": "Détection automatique du mode de couleur du système",
+            "bonus2": "Conservation des préférences utilisateur dans le stockage local",
+            "bonus3": "Création simple de thèmes avec des palettes de couleurs doubles",
+            "bonus4": "Composants prêts à l'emploi pour changer de mode"
+        },
+        "localization": {
+            "title": "Localisation",
+            "subtitle": "Localisation simple mais puissante",
+            "bonus1": "Détection automatique de la langue du navigateur",
+            "bonus2": "Stockage des préférences utilisateur dans le stockage local",
+            "bonus3": "Fichier de traduction unique avec des clés imbriquées",
+            "bonus4": "Composant prêt à l'emploi pour changer de langue"
+        },
+        "notifications": {
+            "title": "Notifications",
+            "subtitle": "Notifications belles et personnalisables",
+            "bonus1": "Système de notification facile et prêt à l'emploi",
+            "bonus2": "Composant unique très flexible et personnalisable",
+            "bonus3": "Types de notifications : succès, info, avertissement, erreur",
+            "bonus4": "Prend en charge la localisation et les modes clair/sombre",
+            "success": {
+                "button": "Succès",
+                "header": "Tout est parfait",
+                "text": "L'action requise a été complétée avec succès"
+            },
+            "info": {
+                "button": "Info",
+                "header": "Le système a terminé la tâche",
+                "text": "Le processus en arrière-plan a été effectué en 15 secondes"
+            },
+            "caution": {
+                "button": "Avertissement",
+                "header": "Vous êtes inactif depuis 10 min",
+                "text": "Pour des raisons de sécurité, n'oubliez pas de vous déconnecter"
+            },
+            "error": {
+                "button": "Erreur",
+                "header": "Échec de connexion",
+                "text": "Vérifiez votre identifiant et mot de passe et réessayez. Si vous êtes sûr que vous entrez les bonnes informations d'identification, créez un ticket de support et nous vous aiderons."
+            },
+            "progress": "Cliquez sur la notification pour éviter le délai d'expiration et voir les détails"
+        },
+        "popups": {
+            "title": "Fenêtres pop-up",
+            "subtitle": "Système de pop-up facile et flexible",
+            "bonus1": "Approche structurée pratique pour les applications Imba",
+            "bonus2": "Fenêtres pop-up hautement personnalisables via CSS",
+            "bonus3": "Boutons flexibles et leurs callbacks",
+            "bonus4": "Les pop-ups sont montés séparément sans perturber le code",
+            "confirmation": {
+                "button": "Confirmation",
+                "header": "Enregistrer les modifications",
+                "text": "Veuillez confirmer si vous souhaitez continuer l'opération. Êtes-vous sûr de vouloir procéder ?",
+                "cancel": "Annuler",
+                "confirm": "OK"
+            },
+            "custom": {
+                "button": "Formulaire personnalisé",
+                "header": "Modifier les informations d'identification",
+                "text": "Remplissez votre nom d'utilisateur et votre nouveau mot de passe conformes à la politique de sécurité :",
+                "cancel": "Annuler",
+                "save": "Enregistrer"
+            }
+        }
+    },
+    "ru": {
+        "$": {
+            "name": "Русский",
+            "flag": "ru"
+        },
+        "main": {
+            "repository": "Репозиторий",
+            "more": "Узнать больше",
+            "package": "Пакет",
+            "header": "Начните новый проект Imba с готовой основой",
+            "subheader": "Универсальный набор библиотек, необходимых для большинства проектов. Сосредоточьтесь на том, что делает ваше приложение уникальным — не тратьте время на создание основ.",
+            "playground": "Увидеть в действии",
+            "builtwith": "Создано с помощью"
+        },
+        "colormodes": {
+            "title": "Цветовые режимы",
+            "subtitle": "Переключение между тёмным/светлым режимами",
+            "bonus1": "Автоматическое определение системного цветового режима",
+            "bonus2": "Сохранение пользовательских настроек в локальном хранилище",
+            "bonus3": "Простое создание тем с двойными цветовыми палитрами",
+            "bonus4": "Готовые компоненты для переключения режимов"
+        },
+        "localization": {
+            "title": "Локализация",
+            "subtitle": "Простая, но мощная локализация",
+            "bonus1": "Автоматическое определение языка браузера",
+            "bonus2": "Сохранение пользовательских настроек в локальном хранилище",
+            "bonus3": "Один файл перевода с вложенными ключами",
+            "bonus4": "Готовый компонент для переключения языков"
+        },
+        "notifications": {
+            "title": "Уведомления",
+            "subtitle": "Красивые, настраиваемые уведомления",
+            "bonus1": "Простая в использовании система уведомлений",
+            "bonus2": "Один очень гибкий и настраиваемый компонент",
+            "bonus3": "Типы уведомлений: успех, информация, предупреждение, ошибка",
+            "bonus4": "Поддерживает локализацию и светлый/тёмный режимы",
+            "success": {
+                "button": "Успех",
+                "header": "Всё отлично",
+                "text": "Требуемое действие успешно выполнено"
+            },
+            "info": {
+                "button": "Инфо",
+                "header": "Система выполнила задачу",
+                "text": "Фоновый процесс был выполнен за 15 секунд"
+            },
+            "caution": {
+                "button": "Извещение",
+                "header": "Вы неактивны в течение 10 мин",
+                "text": "По соображениям безопасности не забудьте выйти из системы"
+            },
+            "error": {
+                "button": "Ошибка",
+                "header": "Ошибка входа",
+                "text": "Проверьте ваш логин и пароль и попробуйте снова. Если вы уверены, что вводите правильные учетные данные, создайте заявку в службу поддержки, и мы вам поможем."
+            },
+            "progress": "Нажмите на уведомление, чтобы избежать тайм-аута и увидеть подробности"
+        },
+        "popups": {
+            "title": "Всплывающие окна",
+            "subtitle": "Простая и гибкая система всплывающих окон",
+            "bonus1": "Структурированный подход, удобный для приложений Imba",
+            "bonus2": "Легко настраиваемые всплывающие окна через CSS",
+            "bonus3": "Гибкие кнопки и их обратные вызовы",
+            "bonus4": "Всплывающие окна монтируются отдельно, не нарушая код",
+            "confirmation": {
+                "button": "Подтверждение",
+                "header": "Сохранить изменения",
+                "text": "Пожалуйста, подтвердите, если вы хотите продолжить операцию. Вы уверены, что хотите продолжить?",
+                "cancel": "Отмена",
+                "confirm": "OK"
+            },
+            "custom": {
+                "button": "Пользовательская форма",
+                "header": "Редактировать учетные данные",
+                "text": "Введите ваше имя пользователя и новый пароль, соответствующие политике безопасности:",
+                "cancel": "Отмена",
+                "save": "Сохранить"
+            }
+        }
+    },
+    "zh": {
+        "$": {
+            "name": "中文",
+            "flag": "cn"
+        },
+        "main": {
+            "repository": "代码库",
+            "more": "了解更多",
+            "package": "包",
+            "header": "使用即用型基础开始新的Imba项目",
+            "subheader": "一套适用于大多数项目的通用库。专注于使您的应用程序与众不同的部分 — 不要浪费时间构建基础部分。",
+            "playground": "查看实际效果",
+            "builtwith": "基于"
+        },
+        "colormodes": {
+            "title": "色彩模式",
+            "subtitle": "无缝切换暗/亮模式",
+            "bonus1": "自动检测系统色彩模式",
+            "bonus2": "在本地存储中保存用户偏好",
+            "bonus3": "使用双色调色板简单创建主题",
+            "bonus4": "即插即用的模式切换组件"
+        },
+        "localization": {
+            "title": "本地化",
+            "subtitle": "简单而强大的本地化功能",
+            "bonus1": "自动检测浏览器语言",
+            "bonus2": "在本地存储中保存用户偏好",
+            "bonus3": "带有嵌套键的单一翻译文件",
+            "bonus4": "即插即用的语言切换组件"
+        },
+        "notifications": {
+            "title": "通知",
+            "subtitle": "美观、可定制的通知",
+            "bonus1": "简易即插即用的通知系统",
+            "bonus2": "单一组件，非常灵活且可定制",
+            "bonus3": "通知类型：成功、信息、警告、错误",
+            "bonus4": "支持本地化和亮/暗模式",
+            "success": {
+                "button": "成功",
+                "header": "一切顺利",
+                "text": "所需操作已成功完成"
+            },
+            "info": {
+                "button": "信息",
+                "header": "系统完成了任务",
+                "text": "后台处理在15秒内完成"
+            },
+            "caution": {
+                "button": "警告",
+                "header": "您已闲置10分钟",
+                "text": "出于安全原因，请不要忘记登出"
+            },
+            "error": {
+                "button": "错误",
+                "header": "登录失败",
+                "text": "检查您的登录名和密码，然后重试。如果您确定输入了正确的凭据，请创建支持票据，我们将帮助您。"
+            },
+            "progress": "点击通知以避免超时并查看详情"
+        },
+        "popups": {
+            "title": "弹窗",
+            "subtitle": "简单灵活的弹窗系统",
+            "bonus1": "对Imba应用程序便捷的结构化方法",
+            "bonus2": "通过CSS高度可定制的弹窗",
+            "bonus3": "灵活的按钮及其回调函数",
+            "bonus4": "弹窗单独挂载，不干扰代码",
+            "confirmation": {
+                "button": "确认",
+                "header": "保存更改",
+                "text": "请确认是否希望继续操作。您确定要继续吗？",
+                "cancel": "取消",
+                "confirm": "确定"
+            },
+            "custom": {
+                "button": "自定义表单",
+                "header": "编辑凭据",
+                "text": "填写符合安全策略的用户名和新密码：",
+                "cancel": "取消",
+                "save": "保存"
+            }
+        }
+    },
+    "ja": {
+        "$": {
+            "name": "日本語",
+            "flag": "jp"
+        },
+        "main": {
+            "repository": "リポジトリ",
+            "more": "詳細を見る",
+            "package": "パッケージ",
+            "header": "すぐに使える基盤で新しいImbaプロジェクトを始める",
+            "subheader": "ほとんどのプロジェクトに必要な一般的なライブラリセット。あなたのアプリをユニークにする部分に集中して — 基本部分の構築に時間を無駄にしないでください。",
+            "playground": "実際に見る",
+            "builtwith": "使用技術"
+        },
+        "colormodes": {
+            "title": "カラーモード",
+            "subtitle": "ダーク/ライトモードのシームレスな切り替え",
+            "bonus1": "システムカラーモードの自動検出",
+            "bonus2": "ローカルストレージにユーザー設定を保存",
+            "bonus3": "デュアルカラーパレットによる簡単なテーマ作成",
+            "bonus4": "プラグアンドプレイのモード切替コンポーネント"
+        },
+        "localization": {
+            "title": "ローカライゼーション",
+            "subtitle": "シンプルながらも強力なローカライゼーション",
+            "bonus1": "ブラウザ言語の自動検出",
+            "bonus2": "ローカルストレージにユーザー設定を保存",
+            "bonus3": "ネストされたキーを持つ単一の翻訳ファイル",
+            "bonus4": "プラグアンドプレイの言語切替コンポーネント"
+        },
+        "notifications": {
+            "title": "通知",
+            "subtitle": "美しくカスタマイズ可能な通知",
+            "bonus1": "簡単に導入できる通知システム",
+            "bonus2": "非常に柔軟でカスタマイズ可能な単一コンポーネント",
+            "bonus3": "通知タイプ：成功、情報、注意、エラー",
+            "bonus4": "ローカライゼーションとライト/ダークモードをサポート",
+            "success": {
+                "button": "成功",
+                "header": "すべて順調",
+                "text": "必要なアクションが正常に完了しました"
+            },
+            "info": {
+                "button": "情報",
+                "header": "システムがタスクを完了しました",
+                "text": "バックグラウンドプロセスは15秒で終了しました"
+            },
+            "caution": {
+                "button": "注意",
+                "header": "10分間操作がありません",
+                "text": "セキュリティ上の理由からログアウトを忘れないでください"
+            },
+            "error": {
+                "button": "エラー",
+                "header": "ログイン失敗",
+                "text": "ログイン名とパスワードを確認して再試行してください。正しい認証情報を入力していることが確かな場合は、サポートチケットを作成してください。お手伝いします。"
+            },
+            "progress": "タイムアウトを避け詳細を見るには通知をクリックしてください"
+        },
+        "popups": {
+            "title": "ポップアップ",
+            "subtitle": "簡単で柔軟なポップアップシステム",
+            "bonus1": "Imbaアプリに便利な体系的アプローチ",
+            "bonus2": "CSSによる高度にカスタマイズ可能なポップアップウィンドウ",
+            "bonus3": "柔軟なボタンとそのコールバック",
+            "bonus4": "ポップアップは別々にマウントされ、コードを妨げません",
+            "confirmation": {
+                "button": "確認",
+                "header": "変更を保存",
+                "text": "操作を続行するかどうか確認してください。本当に続行しますか？",
+                "cancel": "キャンセル",
+                "confirm": "OK"
+            },
+            "custom": {
+                "button": "カスタムフォーム",
+                "header": "認証情報の編集",
+                "text": "セキュリティポリシーに準拠したユーザー名と新しいパスワードを入力してください：",
+                "cancel": "キャンセル",
+                "save": "保存"
+            }
         }
     }
 }

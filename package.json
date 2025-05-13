@@ -11,8 +11,11 @@
     "bundle": "bunx bimba src/index.imba --outdir public --minify"
   },
   "dependencies": {
+    "@types/bun": "^1.2.13",
     "imba-color-modes": "latest",
     "imba-localization": "latest",
-    "imba-phosphor-icons": "latest"
+    "imba-notifications": "latest",
+    "imba-phosphor-icons": "latest",
+    "imba-popups": "latest"
   }
 }

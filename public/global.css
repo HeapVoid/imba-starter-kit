@@ -1,13 +1,14 @@
 /* At the moment Imba do not support several @font-face statements */
 
+/*
 @font-face {
-    font-family: "Montserrat";
-    src: url('assets/montserrat.woff2') format("woff2");
+    font-family: "Inter";
     font-weight: normal;
 }
+*/
 
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
 }
