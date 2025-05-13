@@ -583,7 +583,7 @@ height: 60px;
 padding-left: 20px;
 padding-right: 20px;
 background-color: var(--base4);
-width: 100vw;}
+width: 100%;}
 .h0d4k1_aq.header svg.h0d4k1_aq:not(#_) {width: 30px;
 fill: var(--accent9);}
 .h0d4k1_aq.header div.h0d4k1_aq:not(#_) {font-size: 20px;

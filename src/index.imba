@@ -100,7 +100,7 @@ tag App
 	css
 		body bgc: $base0
 		.header
-			d:hflex ai:center h:60px px:20px bgc:$base4 w:100vw
+			d:hflex ai:center h:60px px:20px bgc:$base4 w:100%
 			svg 
 				w:30px fill:$accent9
 			div
