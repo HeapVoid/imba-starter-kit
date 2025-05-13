@@ -236,7 +236,7 @@ tag App
 			<div [d:hcc]>
 				<div [fs:26px fw:100 mr:5px]> loc['main']['builtwith']
 				<div [d:hcc cursor:pointer c@hover:amber4] @click=(window.open('https://imba.io'))>
-					<img [w:30px mr:2px] src=String("/favicon.svg")>
+					<img [w:30px mr:2px] src=String("favicon.svg")>
 					<div [fs:26px fw:700]> "Imba"
 			<div [mt:5px fs:12px c:light-dark(black/40, white/40) fw:300]> "© 2025 Heap Void"
 
