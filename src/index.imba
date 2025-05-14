@@ -98,7 +98,7 @@ def confirmation
 tag App
 
 	css
-		body bgc: $base0
+		body bgc:$base0 w:100% > 500px
 		.header
 			d:hflex ai:center h:60px px:20px bgc:$base4 w:100%
 			svg 
@@ -108,9 +108,9 @@ tag App
 		.hero
 			w:100% d:vflex ai:center jc:center py:40px bgc:$base2 # background:linear-gradient(180deg, $base2 0%, $base2 100%)
 			div
-				fs:30px w:500px ta:center fw:600
+				fs:30px w:90% < 600px ta:center fw:600
 			span
-				fs:15px w:600px ta:center mt:20px
+				fs:15px w:90% < 600px ta:center mt:20px
 		.block bd:1px solid $gray3 rd:8px p:20px
 		.example bg:$gray3 px:10px py:10px rd:5px fs:12px mt:20px fw:bold
 		.playground bg:$base1 p:20px rd:5px mt:10px d:hflex ai:center jc:center h:84px
@@ -157,7 +157,7 @@ tag App
 		# showroom
 		<div>
 			css d:grid gap:20px px:60px py:40px w:100% < 1200px
-				gtc: 1fr 1fr
+				gtc: minmax(300px, 1fr) minmax(300px, 1fr) gtc@lt-md: minmax(300px,1fr)
 				gtr: 1fr 1fr
 			
 			# Color Modes
